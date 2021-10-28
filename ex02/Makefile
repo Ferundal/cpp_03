@@ -41,7 +41,8 @@ INC_HEADERS_FORMAT=	-I ${dir ${HEADERS}}
 INC_HEADERS_DIR=	${foreach HEADERS, ${HEADERS}, ${INC_HEADERS_FORMAT}}
 
 SRCS_CLASSES=		ClapTrap.cpp \
-					ScavTrap.cpp
+					ScavTrap.cpp \
+					FragTrap.cpp
 
 SRCS_CPP=			${SRCS_CLASSES} \
 					main.cpp
@@ -54,13 +55,13 @@ endif
 
 OBJS_CPP=			${SRCS_CPP:.cpp=.o}
 
-NAME=				ScavTrap
+NAME=				FragTrap
 
 CC=					clang++
 RM=					rm -f
 LD=					ld
 
-ALL_CFLAGS=			-Wall -Wextra -Werror -std=c++98 ${INC_HEADERDIR} ${CFLAGS}
+ALL_CFLAGS=			-Wall -Wextra -Werror -std=c++98 -Wshadow -Wno-shadow ${INC_HEADERDIR} ${CFLAGS}
 ALL_LDFLAGS=		${LDFLAGS}
 
 NORM=				norminette ${NORMO}

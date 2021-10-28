@@ -5,7 +5,7 @@
 # include <iostream>
 # include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap {
+class ScavTrap : public virtual ClapTrap {
 public:
 	ScavTrap( void );
 	ScavTrap( std::string new_name );
