@@ -30,7 +30,7 @@ FragTrap& FragTrap::operator =(const FragTrap& origin) {
 }
 
 FragTrap::~FragTrap( void ) {
-	std::cout << "FragTrap " << name << " desstructor called!" << std::endl;
+	std::cout << "FragTrap " << name << " destructor called!" << std::endl;
 }
 
 void FragTrap::attack(std::string const & target) {

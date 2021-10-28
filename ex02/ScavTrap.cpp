@@ -30,7 +30,7 @@ ScavTrap& ScavTrap::operator =(const ScavTrap& origin) {
 }
 
 ScavTrap::~ScavTrap( void ) {
-	std::cout << "ScavTrap " << name << " desstructor called!" << std::endl;
+	std::cout << "ScavTrap " << name << " destructor called!" << std::endl;
 }
 
 void ScavTrap::attack(std::string const & target) {

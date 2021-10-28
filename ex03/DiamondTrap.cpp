@@ -31,7 +31,7 @@ DiamondTrap& DiamondTrap::operator =(const DiamondTrap& origin) {
 }
 
 DiamondTrap::~DiamondTrap( void ) {
-	std::cout << "DiamondTrap " << name << " desstructor called!" << std::endl;
+	std::cout << "DiamondTrap " << name << " destructor called!" << std::endl;
 }
 
 void DiamondTrap::attack(std::string const & target) {
